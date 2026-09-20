@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="logo"></div>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="hero" class="hero-section">
+                <div class="hero-content">
+                    <h1>Hi, I am Mary Joy</h1>
+                    <p>A second year student whose currently studying at Holy Angel University, School of Computing majoring in Cybersecurity.</p>
+                    <a href="Resume.html" class="btn">Resume</a>
+                </div>
+                <div class="hero-image">
+                    <div class="my-picture">
+                        <img src="my-picture.jpg" alt="My Picture" class="profile-picture">
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="projects">
+                <h2>Projects</h2>
+                
+                <article class="card">
+                    <img class="card-img" src="firstweb.jpg" alt="First website Created" />
+                    <h3 class="card-title">First website</h3>
+                    <p class="card-meta">Basic Web Development</p>
+                    <p class="card-desc">This is my first website project where i first learned the basics of HTML in the first week of the class.</p>
+                    <a class="card-link btn" href="#">View</a>
+                </article>
+
+                <article class="card">
+                    <img class="card-img" src="thaicurbside.jpg" alt="Thai Curbside Website" />
+                    <h3 class="card-title">Making a restaurant website</h3>
+                    <p class="card-meta">Basic Design</p>
+                    <p class="card-desc">My second project in web development was to make a simple restaurant website for Thai Curbside.</p>
+                    <a class="card-link btn" href="#">View</a>
+                </article>
+
+                <article class="card">
+                    <img class="card-img" src="myportfolio.jpg" alt="My Portfolio Website" />
+                    <h3 class="card-title">Portfolio Website</h3>
+                    <p class="card-meta">Interactive Design</p>
+                    <p class="card-desc">The third project in web development was to create a responsive portfolio website that showcases my skills and projects.</p>
+                    <a class="card-link btn" href="#">View</a>
+                </article>
+            </section>
+
+            <section id="project-gallery" class="project-gallery">
+                <h2>Browse My Projects</h2>
+                <label for="project-search">Search</label>
+                <input type="search" id="project-search" placeholder="Type to filter by title..." />
+                <label for="project-sort">Sort by</label>
+                <select id="project-sort">
+                    <option value="none">Default order</option>
+                    <option value="title">Title (A&ndash;Z)</option>
+                    <option value="category">Category (A&ndash;Z)</option>
+                </select>
+                <div id="tag-filters"></div>
+                <p id="project-count"></p>
+                <p id="gallery-warning" role="alert"></p>
+                <ul id="project-list"></ul>
+            </section>
+
+            <section id="skills" class="skills-section">
+                <h2>Skills</h2>
+                <div class="skills-list">
+                    <div class="skill">
+                        <h3>HTML/CSS</h3>
+                        <p>Proficient in creating responsive and accessible web pages.</p>
+                    </div>
+                    <div class="skill">
+                        <h3>JavaScript</h3>
+                        <p>Experienced in building interactive web applications, and still is learning.</p>
+                    </div>
+                    <div class="skill">
+                        <h3>Python</h3>
+                        <p>Also knowledgeable in Python programming, still learning for more knowledge.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div id="contact" class="contact">
+                <a href="https://facebook.com" class="nav-link"><span class="icon-placeholder">FB</span></a>
+                <a href="https://instagram.com" class="nav-link"><span class="icon-placeholder">IG</span></a>
+                <a href="https://github.com" class="nav-link"><span class="icon-placeholder">GH</span></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
